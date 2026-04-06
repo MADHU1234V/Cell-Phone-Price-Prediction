@@ -81,5 +81,5 @@ like RAM, Battery, Screen size etc.
 | style.css | Makes the web page look good |
 | Cellphoneprice.csv | The dataset with 2000 phone records |
 | Cell_phone_price-3.ipynb | Notebook where I built the ML model |
-| CellPricePrediction.pkl | The saved trained model |
-| CellPricePrediction1.pkl | The saved feature names |
+| CellPricePrediction.ipynb | The saved trained model |
+| CellPricePrediction.pkl | The saved feature names |
