@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cell Phone Price Prediction</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cell Phone Price Prediction</h1>
+        <form action="/predict" method="post">
+            <label>RAM (MB):</label>
+            <input type="number" name="ram" required><br>
+
+            <label>Battery Power (mAh):</label>
+            <input type="number" name="battery_power" required><br>
+
+            <label>Pixel Height:</label>
+            <input type="number" name="px_height" required><br>
+
+            <label>Pixel Width:</label>
+            <input type="number" name="px_width" required><br>
+
+            <label>3G Support:</label>
+            <select name="three_g" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select><br>
+
+            <label>4G Support:</label>
+            <select name="four_g" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select><br>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction_text %}
+            <h2>{{ prediction_text }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
