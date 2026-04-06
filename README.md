@@ -1,4 +1,4 @@
-# 📱 Cell Phone Price Prediction
+# Cell Phone Price Prediction
 
 ## What is this project?
 This project predicts the price range of a mobile phone.
